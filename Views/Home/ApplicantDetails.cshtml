@@ -1,0 +1,152 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   
+    <style>
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        margin: 0;
+        font-family: Arial, sans-serif;
+      }
+
+      .form-container {
+        text-align: center;
+        width: 90%; /* Adjust the width as needed */
+        max-width: 600px; /* Maximum width for larger screens */
+        margin: auto;
+      }
+      .container {
+        margin: 0 auto;
+        overflow: hidden;
+        width: 100%;
+      }
+      label {
+        display: inline-block;
+        width: 100%;
+        box-sizing: border-box;
+        text-align: left;
+        margin-bottom: 8px;
+      }
+
+      input,
+      textarea {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 8px;
+        margin-bottom: 16px;
+      }
+
+      button {
+        display: inline-block;
+        width: 40%;
+        padding: 10px 0;
+        font-size: 16px;
+        cursor: pointer;
+        border: none;
+        border-radius: 4px;
+        margin-top: 10px;
+      }
+
+      button.cancel {
+        background-color: #3498db;
+      }
+
+      button[type="submit"] {
+        background-color: #3498db;
+        color: #fff;
+      }
+      nav {
+        background-color: #3498db;
+        padding: 10px;
+        text-align: left;
+      }
+
+      nav a {
+        color: #fff;
+        text-decoration: none;
+        padding: 10px 20px;
+        display: inline-block;
+        height: 1em;
+      }
+      .icon-container {
+        font-size: 1.25em;
+      }
+      @@media (min-width: 600px) {
+        /* Larger screens */
+        .form-container {
+          width: 70%;
+        }
+      }
+    </style>
+    <link href="~/css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="form-container">
+        <h2 style="padding-top: 1em">Applicant Details</h2>
+        <form action="#" method="post">
+          <label for="jobTitle" style="padding-top: 1em">Name:</label>
+          <input
+            type="text"
+            id="jobTitle"
+            name="jobTitle"
+            required
+            value="John Monroe"
+          />
+          <label for="jobType" style="padding-top: 1em">Email:</label>
+          <input
+            type="text"
+            id="jobType"
+            name="jobType"
+            required
+            value="johnmonraoe@123.com"
+          />
+          <label for="jobType" style="padding-top: 1em">Gender:</label>
+          <input
+            type="text"
+            id="jobType"
+            name="jobType"
+            required
+            value="Male"
+          />
+
+          <label for="location" style="padding-top: 1em">Phone:</label>
+          <input
+            type="text"
+            id="location"
+            name="location"
+            required
+            value="+1324564533"
+          />
+
+          <label for="salary" style="padding-top: 1em">ID:</label>
+          <input
+            type="text"
+            id="salary"
+            name="salary"
+            required
+            value="U56778903"
+          />
+
+          <label for="positions" style="padding-top: 1em">Cover Letter:</label>
+          <textarea id="jobDescription" name="jobDescription" rows="4" required>
+I am writing to express my interest in the PHP Developer position at [Company Name], as advertised on your website. With a solid background in software development and a proven track record of success, I am confident in my ability to contribute effectively to your dynamic team.
+
+        I am a highly skilled PHP Developer with [X years] of experience in designing, implementing, testing, and maintaining web applications. My proficiency in PHP, along with my expertise in modern frameworks such as Laravel and Symfony, has allowed me to develop robust and scalable solutions that meet and exceed clients' expectations</textarea
+          >
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
+<script>
+  function cancel() {
+    window.location.href = "./jobposting.html";
+  }
+</script>

@@ -1,0 +1,126 @@
+﻿<!DOCTYPE html>
+@model UNIVERSITYJOBSPORTAL.Models.JobModel
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   
+    <style>
+      body {
+        
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        margin: 0;
+        font-family: Arial, sans-serif;
+      }
+
+      .form-container {
+        text-align: center;
+        width: 90%;
+        max-width: 600px; 
+        margin: auto;
+      }
+      .container {
+        margin: 0 auto;
+        overflow: hidden;
+        width: 100%;
+      }
+      label {
+        display: inline-block;
+        width: 100%;
+        box-sizing: border-box;
+        text-align: left;
+        margin-bottom: 8px;
+      }
+
+      input,
+      textarea {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 8px;
+        margin-bottom: 16px;
+      }
+
+      button {
+        display: inline-block;
+        width: 40%;
+        padding: 10px 0;
+        font-size: 16px;
+        cursor: pointer;
+        border: none;
+        border-radius: 4px;
+        margin-top: 10px;
+      }
+
+      button.cancel {
+        background-color: #3498db;
+      }
+
+      button[type="submit"] {
+        background-color: #3498db;
+        color: #fff;
+      }
+      nav {
+        background-color: #3498db;
+        padding: 10px;
+        text-align: left;
+      }
+
+      nav a {
+        color: #fff;
+        text-decoration: none;
+        padding: 10px 20px;
+        display: inline-block;
+      }
+      .icon-container {
+        font-size: 1.25em;
+      }
+@@media (min-width: 600px) {
+        /* Larger screens */
+        .form-container {
+          width: 70%;
+        }
+      }
+    </style>
+    <link href="~/css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="form-container">
+        <h2>Create Job Posting</h2>
+         @using (Html.BeginForm("createJobPosting", "Home", FormMethod.Post))
+             { 
+          <label for="jobTitle">Job Title:</label>
+          @Html.TextBoxFor(x=>x.title, new {  required = "required" })
+
+          <label for="jobDescription">Job Description:</label>
+                @Html.TextAreaFor(x=>x.description, new {  required = "required" })
+
+          <label for="jobType">Department</label>
+                @Html.DropDownListFor(model => model.type, (IEnumerable<SelectListItem>)ViewBag.departmentList, "Select an option", new {  required = "required" })
+
+
+                <label for="location">Location:</label>
+         @Html.TextBoxFor(x=>x.location, new {  required = "required" })
+
+          <label for="salary">Salary:</label>
+                @Html.TextBoxFor(x=>x.salary, new {  required = "required" })
+
+
+          <label for="positions">#Positions:</label>
+                @Html.TextBoxFor(x=>x.positions, new {  required = "required" })
+
+
+
+
+          <button type="submit">Create</button>
+          <button type="button" class="cancel"  onclick="location.href='@Url.Action("Index","Home")'">
+            Cancel
+          </button>
+        }
+      </div>
+    </div>
+  </body>
+</html>

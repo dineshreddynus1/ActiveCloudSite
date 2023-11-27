@@ -1,0 +1,164 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+@model IEnumerable<UNIVERSITYJOBSPORTAL.Models.JobModel>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Job Site</title>
+
+    <style>
+        body {
+            font-family: "Arial", sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+    
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+           
+        }
+
+        #search {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #fff;
+            border: none;
+            width: 100%;
+        }
+
+        #featured-jobs {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .job-card {
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            padding: 15px;
+            width: calc(33.333% - 20px);
+            box-sizing: border-box;
+        }
+
+        footer {
+            background-color: #3498db;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        tr {
+            display: flex;
+           
+            text-align: center;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        td {
+            flex: 1 1 10%;
+        }
+
+        th {
+            flex: 1 1 10%;
+            text-align: center;
+        }
+
+        th,
+        td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+            box-sizing: border-box;
+        }
+
+        th {
+            background-color: gray;
+        }
+
+        .center-container {
+            text-align: center;
+        }
+
+            .center-container button {
+                padding: 10px 20px;
+                font-size: 16px;
+                cursor: pointer;
+                background-color: #3498db;
+                color: #fff;
+                border: none;
+                border-radius: 4px;
+            }
+
+        nav {
+            background-color: #3498db;
+            padding: 10px;
+            text-align: left;
+        }
+
+            nav a {
+                color: #fff;
+                text-decoration: none;
+                padding: 10px 20px;
+                display: inline-block;
+                height: 1em;
+            }
+
+        .icon-container {
+            font-size: 1.25em;
+        }
+    </style>
+
+    <link href="~/css/style.css" rel="stylesheet" />
+</head>
+<body>
+
+    <div class="container">
+        <h2>Apply Jobs</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>JOB TITLE</th>
+                    <th>SALARY</th>
+                    <th>NO OF OPEN POSITIONS</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var element in Model)
+                {
+                    <tr>
+                        <td>@element.title</td>
+                        <td>@element.salary</td>
+                        <td>@element.positions</td>
+                        <td>
+                           <button class="edit-btn" onclick="location.href='@Url.Action("GetJobDetailsbyId", "Home", new { id = element.Id })'">Apply</button>
+   </td>
+                    </tr>
+                }
+
+            </tbody>
+        </table>
+      
+    </div>
+
+</body>
+</html>

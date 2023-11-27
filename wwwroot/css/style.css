@@ -1,0 +1,90 @@
+
+table {
+    font-size: 12px;
+  
+}
+
+container {
+    margin-left:5%
+
+}
+
+
+a {
+    text-decoration: none;
+    color: #007bff;
+    transition: color 0.3s ease-in-out;
+}
+
+    a:hover {
+        color: #0056b3;
+    }
+
+
+
+.form-container select {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 8px;
+    margin-bottom: 16px;
+}
+
+@media only screen and (max-width: 600px) {
+    nav a {
+      display: block;
+      margin-bottom: 10px;
+    }
+    td {
+        flex: 1 1 1%;
+    }
+
+    th {
+        flex: 1 1 1%;
+        text-align: center;
+    }
+
+    table {
+        font-size: 6px;
+    }
+
+
+  
+
+    nav {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    nav.show {
+      display: flex;
+    }
+    .image {
+        max-width: 100%;
+      }
+      }
+      .image {
+        flex: 1;
+        max-width: 100%; 
+  }
+
+
+@media (max-width: 768px) {
+    .box {
+        width: 100%;
+    }
+
+    .card-container {
+        display: block;
+        margin: 20px;
+        max-width: 100%;
+    }
+
+    .card {
+        max-width: 100%;
+    }
+
+    table {
+        font-size:6px;
+    }
+}

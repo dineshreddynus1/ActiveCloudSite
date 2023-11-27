@@ -1,0 +1,126 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        overflow: hidden;
+        display: block;
+       
+      }
+
+      .box {
+        float: left;
+        width: 50%;
+        box-sizing: border-box;
+        padding: 20px;
+      }
+
+      .image {
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+        display: block;
+        border-radius: 8px;
+      }
+      nav {
+        background-color: #3498db;
+        padding: 10px;
+        text-align: left;
+      }
+
+      nav a {
+        color: #fff;
+        text-decoration: none;
+        padding: 10px 20px;
+        display: inline-block;
+        height: 1em;
+      }
+      .icon-container {
+        font-size: 1.25em;
+      }
+      .card-container {
+        display: flex;
+        margin: 20px;
+        margin-top: 5em;
+      }
+
+      .card {
+        flex: 1;
+        max-width: 25%;
+        margin: 1em;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        height: 10 em;
+        background-color: #3498db;
+      }
+
+      .card-content {
+        padding: 20px;
+        text-align: center;
+      }
+
+      h2,
+      p {
+        margin: 0;
+      }
+    </style>
+    <link href="~/css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        <img src="~/Images/job.jpeg.jpg" alt="Image Description" class="image" />
+      </div>
+
+      <div class="box">
+        <p>
+          Welcome to our University Job Portal, a dynamic and inclusive platform
+          designed to seamlessly connect the academic prowess of our university
+          community with promising professional opportunities. This portal
+          serves as the nexus between students, alumni, and prospective
+          employers, fostering a collaborative ecosystem that propels careers
+          forward and contributes to the growth of both individuals and
+          industries.job.jpeg
+        </p>
+      </div>
+    </div>
+    <div class="card-container">
+      <div class="card">
+        <div class="card-content">
+          <h3 style="color: white">See Jobs in Each Department</h3>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-content">
+          <h3 style="color: white">Apply For Multiple Jobs</h3>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-content">
+          <h3 style="color: white">Analyze Average Salary</h3>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-content">
+          <h3 style="color: white">Post / Update Jobs</h3>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

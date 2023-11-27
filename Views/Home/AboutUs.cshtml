@@ -1,0 +1,340 @@
+﻿
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <style>
+        p {
+            font-size: 12px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            align-items: center;
+            justify-content: center;
+        }
+
+        section {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        article {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .container {
+            padding-left: 10em;
+            padding-right: 10em;
+        }
+
+        h2 {
+            margin-bottom: 10px;
+            color: #3498db;
+        }
+
+        p {
+            margin: 0;
+        }
+
+        nav {
+            background-color: #3498db;
+            padding: 10px;
+            text-align: left;
+        }
+
+            nav a {
+                color: #fff;
+                text-decoration: none;
+                padding: 10px 20px;
+                display: inline-block;
+                height: 1em;
+            }
+
+        .icon-container {
+            font-size: 1.25em;
+        }
+
+        .card {
+            flex: 1;
+            max-width: 80%;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 2em;
+            height: auto;
+            overflow: hidden;
+            padding: 1em;
+        }
+
+        .card-content {
+            padding: 20px;
+            display: block;
+        }
+
+        .card_e {
+            height: 25em;
+            width: 30em;
+            background-color: #fff;
+        }
+
+
+        .image-container img {
+            width: 100%;
+            height: auto;
+        }
+
+        .cardx {
+            margin: 10px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            width: 30%;
+            display: flex;
+        }
+
+        h2,
+        p {
+            margin: 0;
+        }
+
+        .dan-img {
+            height: 40rem;
+            width: 20rem;
+        }
+
+        @@media (max-width: 768px) {
+            .card {
+                flex: 1 0 100%;
+            }
+
+            .dan-img {
+                height: 20rem;
+                width: 10rem;
+            }
+
+            .card-content {
+                padding: 20px;
+            }
+
+            h2 {
+                padding-top: 5px;
+            }
+
+            .container {
+                display: flexbox;
+                padding-left: 1em;
+                padding-right: 1em;
+            }
+        }
+
+        .contain {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        .sec {
+            text-align: center;
+            margin: 10px;
+            padding: 15px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            width: 20%;
+            height: auto;
+        }
+
+        .para {
+            padding: 5px;
+            font-family: "Arial", sans-serif;
+            line-height: 1.2;
+            color: #333;
+            margin: 15px;
+        }
+
+        .styler {
+            width: 5rem;
+            height: 5rem;
+        }
+    </style>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body onload="draw()">
+
+    <div class="contain">
+        <div class="sec">
+            <img src="~/images/A.jpg" alt="Image 1" />
+            <h2>Abhijeet Sharma</h2>
+            <p class="para">
+                Accomplished Business Intelligence analytics professional dedicated to the Ecommerce  industry with
+                a unique skill set encompassing data analysis and consumer behavior modeling.
+                Proficient in leveraging statistical analysis to make informed decisions and
+                derive valuable insights from intricate datasets. For this project have created
+                homepage and Job postings page  using HTML, along with creating ER
+                diagrams for the associated tables.
+            </p>
+        </div>
+
+        <div class="sec">
+            <img src="~/images/DIneshR.jpg" alt="Image 2" />
+            <h2>Dinesh Reddy Naredla</h2>
+            <p class="para">
+                Database Adminstrator  with over 2 years of experience specializing in constructing
+                and maintaining databases. Proficient in SQL, Python, and ORACLE Developer.
+                Utilized HTML to craft an engaging About Us page, applicants list page and
+                employed CSS for styling responsive design.
+            </p>
+        </div>
+
+        <div class="sec">
+            <img src="~/images/Sai.jpg" alt="Image 3" />
+            <h2>Sai Thejeswar Takkolu</h2>
+            <p class="para">
+                I have 3 years of work experince of Working with Power Platforms Developer.Skilled i
+                PowerBI,Power Automate  to facilitate businesses in making informed, data-driven decisions
+                enhancing customer satisfaction. Contributed to create application page , create job page
+                charts for data, creating a visually appealing and user-friendly layout
+                using HTML and CSS.
+            </p>
+        </div>
+
+        <div class="sec">
+            <img src="~/images/Sowmya.jpg" alt="Image 4" />
+            <h2>Komirelli sowmya</h2>
+            <p class="para">
+                I have experince in IT industry. I have worked extensively On SQL and Data Vizulization
+                as a Analyst creating value for my organizations. I have worked on update job and applicant details
+                page.I have created resposive user interface using CSS,HTML
+            </p>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-content">
+            <h2>ER Diagram</h2>
+
+            <div class="image">
+                <img src="~/images/university.jpg" alt="Card Image 4" />
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-content">
+            <h2>Number of fulltime vspermanent vs  contract positions</h2>
+
+            <div class="image ">
+                <canvas id="myChart" width="20" height="10"></canvas>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-content">
+            <h2>API Information</h2>
+            <p style="text-align: left; padding: 1em">
+                <b>End point:</b>
+                https://api.adzuna.com/v1/api/jobs/gb/search/1?app_id={app_id}&app_key={app_key}&results_per_page=50
+            </p>
+            <p style="text-align: left; padding: 1em"><b>app_id :</b> 664cb272</p>
+            <p style="text-align: left; padding: 1em">
+                <b>App Key</b> : 5c230f31c78a5d93f92916a6f197cd0b
+            </p>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-content">
+            <h2>GitHub Link</h2>
+            <p style="text-align: left">https://github.com/Abhi262626/Web_Look_Feel.git</p>
+        </div>
+    </div>
+</body>
+</html>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script type="text/javascript"
+        src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
+<script>
+
+    $(document).ready(function () {
+
+        debugger;
+
+        var resultdata = {};
+
+        $.ajax({
+            url: '/Home/GetData',
+            type: 'GET',
+            success: function (result) {
+                debugger;
+
+                resultdata = result;
+
+                console.log(resultdata);
+
+
+
+                // JavaScript code to create and render the chart
+                var ctx = document.getElementById("myChart").getContext("2d");
+                var myChart = new Chart(ctx, {
+                    type: "bar",
+                    data: {
+                        labels: ["Permanent", "FullTime", "ContractType"],
+                        datasets: [
+                            {
+                                label: "Dataset Label",
+                                data: [resultdata.permanent, resultdata.full, resultdata.con],
+                                backgroundColor: [
+                                    "rgba(255, 99, 132, 0.5)",
+                                    "rgba(54, 162, 235, 0.5)",
+                                    "rgba(20, 162, 235, 0.5)",
+                                ],
+                                borderColor: ["rgba(255, 99, 132, 1)", "rgba(54, 162, 235, 1)", "rgba(20, 162, 235, 0.5)"],
+                                borderWidth: 1,
+                            },
+                        ],
+                    },
+                    options: {
+                        scales: {
+                            y: {
+                                beginAtZero: true,
+                            },
+                            xAxes: [
+                                {
+                                    barThickness: 0.1,
+                                },
+                            ],
+                        },
+                    },
+                });
+
+            },
+            error: function (error) {
+                // Handle any errors
+                console.error(error);
+            }
+        });
+
+    })
+
+</script>

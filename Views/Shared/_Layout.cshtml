@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - UNIVERSITYJOBSPORTAL</title>
+  
+    <link href="~/css/style.css" rel="stylesheet" />
+  
+</head>
+<body>
+    <header>
+        <nav>
+            <a class="icon-container" href="@Url.Action("Index","Home")"><b> UNIVERSITY JOBS PORTAL<b> </a>
+            <a href="@Url.Action("Index","Home")">HOME</a>
+            <a href="@Url.Action("AboutUs","Home")">ABOUT US</a>
+            <a href="@Url.Action("ManageJobs","Home")">MANAGE JOBS</a>
+            <a href="@Url.Action("getJobsList","Home")">APPLY FOR JOBS</a>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
