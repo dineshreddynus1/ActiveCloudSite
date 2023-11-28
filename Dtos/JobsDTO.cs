@@ -11,3 +11,4 @@
         public string Location { get; set; }
     }
 }
+/* This file contains jobsDTO for this website*/

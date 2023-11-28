@@ -31,3 +31,4 @@ namespace UNIVERSITYJOBSPORTAL.Models
         }
     }
 }
+//This model helps in retrieving applicant data

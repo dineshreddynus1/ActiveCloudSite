@@ -21,3 +21,4 @@ namespace UNIVERSITYJOBSPORTAL.Dtos
         public JobModel job { get; set; }
     }
 }
+/* This file contains jobapplicationDTO for this website*/

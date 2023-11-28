@@ -26,3 +26,4 @@ namespace UNIVERSITYJOBSPORTAL.Models
         }
     }
 }
+//This model helps in retrieving department data
