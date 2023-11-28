@@ -140,8 +140,10 @@
             .anchy::after {
                 content: "";
                 display: block;
+
                 height: 2px;
                 width: 0;
+
                 background: #007bff;
                 transition: width 0.3s ease-in-out;
             }
@@ -178,8 +180,10 @@
                 {
                 <tr>
                     <td>@element.jobName</td>
+                    
                     <td>@element.department</td>
                         @Html.HiddenFor(x=>element.jobID)
+
                          <td>@element.Location</td>
                     <td>
                             <a class="edit-btn" href ="@Url.Action("GetApplicantsByJobId","Home", new{@id = element.jobID})">

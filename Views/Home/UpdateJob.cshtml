@@ -83,10 +83,13 @@
 
             @using (Html.BeginForm("UpdateJobDetailsbyId", "Home", FormMethod.Post))
              {   <label for="jobTitle">Job Title:</label>
+
           @Html.TextBoxFor(x=>x.title, new {  required = "required" })
           @Html.HiddenFor(x=>x.departmentId)
 
+
           <label for="jobDescription">Job Description:</label>
+
           @Html.TextAreaFor(x=>x.description, new {  required = "required" })
 
           
@@ -94,6 +97,7 @@
 
 
           <label for="location">Location:</label>
+
                 @Html.TextBoxFor(x=>x.location, new {  required = "required" })
 
           <label for="salary">Salary:</label>
@@ -104,9 +108,12 @@
 
                 <span>
           <button type="submit" onclick="cancel()">Update</button>
+
                 <button type="button" class="cancel" onclick="location.href='@Url.Action("Index","Home")'">
             Cancel
+            
           </button>
+
           </span>
         }
     
